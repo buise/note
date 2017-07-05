@@ -1,7 +1,6 @@
 /**
  * Created by Administrator on 2017/7/4.
  */
-window.onload=function () {
     angular.module('note',[])
         .controller('ctrl',["$scope",function ($scope) {
             $scope.data=localStorage.message?JSON.parse(localStorage.message):[];
@@ -156,4 +155,3 @@ window.onload=function () {
                 return id;
             }
         }])
-}
